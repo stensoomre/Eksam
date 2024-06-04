@@ -1,0 +1,27 @@
+hostname R0
+no ip domain-lookup
+enable secret cisco123
+service password-encryption
+
+interface Loopback1
+ ip address 209.165.200.225 255.255.255.224
+
+interface Serial0/1/0
+ ip address 10.1.1.1 255.255.255.252
+ clock rate 128000
+ no shutdown
+
+interface Serial0/1/1
+ ip address 10.2.2.1 255.255.255.252
+ clock rate 128000
+ no shutdown
+
+line console 0
+ logging synchronous
+ password cisco
+ login
+
+line vty 0 4
+ password cisco
+ login
+ transport input all
