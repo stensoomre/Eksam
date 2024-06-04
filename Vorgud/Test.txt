@@ -1,0 +1,4 @@
+Test connectivity between devices.
+This basic configuration sets up IP addresses, disables DNS lookup, sets passwords, and configures interfaces according to the given topology and requirements.
+
+For further detailed configurations like RIP, HSRP, or EtherChannel protocols as mentioned in the steps, additional commands will need to be added to the configurations. If you need those specific configurations as well, please let me know!
